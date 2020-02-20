@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="arquivos.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+
+      jQuery("#subirTopo").hide();
+
+      jQuery('a#subirTopo').click(function () {
+        jQuery('body,html').animate({
+          scrollTop: 0
+        }, 700);
+        return false;
+      });
+
+      jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 800) {
+          jQuery('#subirTopo').fadeIn();
+        } else {
+          jQuery('#subirTopo').fadeOut();
+        }
+      });
+    });
+  </script>
+
+<script>
+    jQuery(window).load(function () {
+      $(".loader").delay(1500).fadeOut("slow"); 
+    $("#tudo_page").toggle("fast");
+});
+</script>
+<script>
+  function inscricao() {
+    alert("Olá, espero que esteja tudo bem com você! Infelizemente, as inscrição ainda não foram abertas.");
+  }
+  </script>
+
+
+  <title>Arena 2020</title>
+</head>
+
+<body>
+  <div id="loader" class="loader"></div>
+  <a id="subirTopo">
+    <i class="fas fa-angle-double-up"></i>
+  </a>
+
+  <!--  MENU  -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <img src="img/logoarena.png" class="img-fluid" alt="Responsive image" style=" width: 150px; margin-right: 35%;">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#inicio" style="font-size: 20px;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destaques" style="font-size: 20px;">Destaques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#jogos" style="font-size: 20px;">Jogos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria" style="font-size: 20px;">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#atracoes" style="font-size: 20px;">Atrações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer" style="font-size: 20px;">Parceiros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  Corousel central inicio  -->
+
+  <img src="img/home.jpg" class="img-fluid" alt="Responsive image" width="100%">
+
+
+
+  <!-- Jogos Destaques-->
+  <div class="container flex-row " data-aos="fade-down" id="destaques">
+    <h1 class="display-4" style="margin-bottom: 5%; margin-top: 7%;"> Destaques </h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="threed">
+          <div class="card h-30">
+            <img src="img/lol.PNG" class="img-fluid" alt="Responsive image" width="100%">
+            <div class="card-body">
+              <h5 class="card-title">League of Legends</h5>
+              <p class="card-text">League of Legends é um jogo eletrônico do gênero
+                multiplayer online battle arena, desenvolvido e publicado pela Riot Games para
+                Microsoft Windows e Mac OS X</p>
+              <div class="card-body" style="border-top: double black;">
+                <table>
+                  <tr>
+                    <td>
+                      <span style="margin-top: 20px;"><b>Valor: 20.00</b></span><i class="fas fa-money-bill-alt"
+                        style="margin-left: 5px;"></i>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-warning"
+                        style="width: 120px; height: 40px; margin-left: 30%;" onclick="inscricao()"> <a href="#"
+                          style="color: black;"><b>Inscreve-se</b></a></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="threed">
+          <div class="card h-100 mg-3">
+            <img src="img/fifa.jpg" class="img-fluid" alt="Responsive image" width="100%">
+            <div class="card-body">
+              <h5 class="card-title">Fifa</h5>
+              <p class="card-text">FIFA 20 é um jogo eletrônico de futebol desenvolvido e
+                publicado pela EA Sports, que será lançado mundialmente em 27 de setembro de 2019.</p>
+              <div class="card-body" style="border-top: double black;">
+                <table>
+                  <tr>
+                    <td>
+                      <span style="margin-top: 20px;"><b>Valor: 20.00</b></span><i class="fas fa-money-bill-alt"
+                        style="margin-left: 5px;"></i>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-warning"
+                        style="width: 120px; height: 40px; margin-left: 30%;" onclick="inscricao()"> <a href="#"
+                          style="color: black;"><b>Inscreve-se</b></a></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="threed">
+          <div class="card h-100">
+            <img src="img/freefire.PNG" class="img-fluid" alt="Responsive image" width="100%">
+            <div class="card-body">
+              <h5 class="card-title">Garena Free Fire</h5>
+              <p class="card-text">Garena Free Fire é um jogo eletrônico mobile de ação-aventura
+                do gênero battle royale, desenvolvido pela 111dots Studio e publicado pela Garena.</p>
+              <div class="card-body" style="border-top: double black;">
+                <table>
+                  <tr>
+                    <td>
+                      <span style="margin-top: 20px;"><b>Valor: 20.00</b></span><i class="fas fa-money-bill-alt"
+                        style="margin-left: 5px;"></i>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-warning"
+                        style="width: 120px; height: 40px; margin-left: 30%;" onclick="inscricao()"> <a href="#"
+                          style="color: black;"><b>Inscreve-se</b></a></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Jogos geral-->
+    <div class="container flex-row " data-aos="fade-up" id="jogos">
+      <h1 class="display-4" style="margin-bottom: 5%; margin-top: 7%;"> Jogos </h1>
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="threed">
+            <div class="card">
+              <img src="img/lol.PNG" class="img-fluid" alt="Responsive image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 12px;">League of Legends</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="threed">
+            <div class="card">
+              <img src="img/fifa.jpg" class="img-fluid" alt="Responsive image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 12px;">Fifa 2020</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="threed">
+            <div class="card">
+              <img src="img/freefire.PNG" class="img-fluid" alt="Responsive image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 12px;">Garena Free Fire</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="threed">
+            <div class="card">
+              <img src="img/cs.png" class="img-fluid" alt="Responsive image" width="100%" height="200%">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 12px;">Counter-Strike</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="threed">
+            <div class="card">
+              <img src="img/Dota2.jpg" class="img-fluid" alt="Responsive image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 12px;">Dota2</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="threed">
+            <div class="card">
+              <img src="img/fortinite.jpg" class="img-fluid" alt="Responsive image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 12px;">Fortinite</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div style="margin-top: 20px;">
+        <center><button type="button" class="btn btn-warning" style="width: 130px; height: 50px;" onclick="inscricao()"><b><a href="#" style="color: black;">Inscreve-se</a></b>
+          </button></center>
+      </div>
+    </div>
+
+    <!-- Carousel galeria-->
+    <div class="container " data-aos="fade-down" id="galeria">
+      <h1 class="display-4" style="margin-bottom: 5%; margin-top: 7%;"> Galeria </h1>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+
+
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/galeria/7.jpg" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/galeria/8.jpg" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/galeria/9.jpg" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Atrações-->
+
+  <div class="container " data-aos="fade-down" id="atracoes">
+    <h1 class="display-4" style="margin-bottom: 5%; margin-top: 7%;"> Atrações </h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="threed">
+          <div class="card">
+            <img src="img/atracoes/joao.jpg" class="img-fluid" alt="Responsive image" width="100%">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 25px;">DJ JOAO</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--  Footer -->
+
+  <div class="container-fluid text-center pt-5" style="background-color: black;  margin-top: 7%;" id="footer">
+    <div class="row">
+      <div class="col-md-6 mb-5" style="color: blanchedalmond; text-transform: uppercase; font-size: 25px;">
+        REALIZAÇÃO<br />
+        <a href="http://ulbra-to.br/Cursos/Ciencia-da-Computacao/" target="_blank"><img
+            src="img/realizacoes/ciencia-site.png" width="20%"></a>
+        <a href="http://ulbra-to.br/" target="_blank"><img src="img/realizacoes/engenharia-site.png" width="20%"></a>
+        <a href="http://ulbra-to.br/Cursos/Engenharia-de-Software/" target="_blank"><img
+            src="img/realizacoes/sistemas-site.png" width="20%"></a>
+      </div>
+      <div class="col-md-6 mb-5" style="color: blanchedalmond; text-transform: uppercase; font-size: 25px;">
+        PARCEIROS<br />
+        <a href="http://42bareboardgames.com.br/" target="_blank"><img src="img/parceiros/42-site.png" width="20%"></a>
+        <a href="https://siminternet.com.br/" target="_blank"><img src="img/parceiros/sim-site.png" width="20%"></a>
+        <img src="img/parceiros/ti-site.png" width="20%">
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color: blanchedalmond;">© 2019 Copyright:
+      <a href="https://www.instagram.com/athosviniciusc/" target="_blank"> Athos Vinicius</a><br>
+      <img src="img/logoarena.png" class="img-fluid" alt="Responsive image" width="100px">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-carousel-3d.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
